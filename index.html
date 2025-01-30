@@ -42,9 +42,9 @@
   </script>
 </head>
 <body>
-   <header class=" mx-auto font-sora bg-gradient-to-r from-pink-200 to-pink-400 mt-5">
+   <header class=" md:container mx-auto font-sora  mt-5">
     <!-- Navbar -->
-     <nav >
+     <nav class="bg-gradient-to-r from-pink-200 to-pink-400" >
       <div class="bg-pink-500 ">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -93,9 +93,9 @@
 
    </header>
    
-   <main class="font-adlam-display mx-auto">
+   <main class="font-adlam-display  ">
     <!-- Banner section -->
-     <section class="mt-24">
+     <section class="mt-24 md:container mx-auto">
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <img
@@ -116,7 +116,7 @@
      </section>
 
      <!-- Card-section -->
-     <section class=" mx-auto font-adlam-display ">
+     <section class=" md:container mx-auto font-adlam-display mt-40">
       <h3 class="text-5xl  mb-24">Browse By Categories</h3>
       <div class="mx-auto grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
         <!-- 1st card -->
@@ -217,6 +217,28 @@
          </div>
       </div>
      </section>
+
+     <!-- Trending Pet Products -->
+      <section class="font-adlam-display mt-40 bg-pink-100">
+        <div class="md:container mx-auto mt-24">
+          <h3 class="text-5xl  mb-24">Trending Pet Products</h3>
+          <!-- Cards -->
+           <div>
+            <div class="card bg-yellow-500 w-96 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title text-4xl">T - Shirt For Dogs</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <button class=" bg-white px-2 py-3 rounded-xl">Shop Now</button>
+              </div>
+              <figure>
+                <img
+                  src="c1-assets/cute-pet-small.png"
+                  alt="Shoes" />
+              </figure>
+            </div>
+           </div>
+        </div>
+      </section>
    </main>
 </body>
 </html>
