@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/654a63bda1.js" crossorigin="anonymous"></script>
-<style>
-    .font-adlam-display{
-  font-family: "ADLaM Display", serif;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/654a63bda1.js" crossorigin="anonymous"></script>
+  <style>
+    .font-adlam-display {
+      font-family: "ADLaM Display", serif;
+    }
 
-.font-sora{
-  font-family: "Sora", serif;
-  font-optical-sizing: auto;
-}
+    .font-sora {
+      font-family: "Sora", serif;
+      font-optical-sizing: auto;
+    }
+  </style>
 
-
-</style>
-
-<script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -41,88 +40,81 @@
     }
   </script>
 </head>
+
 <body>
-   <header class=" md:container mx-auto font-sora  mt-5">
-    <!-- Navbar -->
-     <nav class="bg-gradient-to-r from-pink-200 to-pink-400" >
-      <div class="bg-pink-500 ">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Find a pet</a></li>
-                <li><a>Breeds</a></li>
-                <li><a>Contact us</a></li>
-              </ul>
-            </div>
+  <header class="container mx-auto">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="">
+          <div class="flex gap-4 items-center">
             <img class="" src="c1-assets/logo-header.png" alt="">
-            <a class=" text-xl">Browse <span class="text-yellow-400">4</span>Pets</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Find a pet</a></li>
-              <li><a>Breeds</a></li>
-              <li><a>Contact us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end gap-5">
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-magnifying-glass "></i>
-            <a class="border border-yellow-400 px-3 py-2 rounded-lg" href="">Login</a>
-            <a class="btn bg-firstbaton">Register</a>
+            <a class="text-2xl hidden lg:flex">Browse <span class="text-yellow-400">4</span>Pets</a>
           </div>
         </div>
-      </div>
-     </nav>
 
-   </header>
-   
-   <main class="font-adlam-display  ">
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Find a pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="hidden lg:flex justify-center items-center gap-8">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass "></i>
+          <a class="border border-yellow-400 btn btn-outline btn-warning px-3 py-2 rounded-lg" href="">Login</a>
+          <a class="btn bg-firstbaton">Register</a>
+        </div>
+        <div class="dropdown ">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 -ml-32 w-44 rounded-box z-[1] mt-3 shadow">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="font-adlam-display">
     <!-- Banner section -->
-     <section class=" w-full mt-24 md:container mx-auto">
+    <section class=" w-full m-4 mt-24 md:container mx-auto lg:relative ">
       <div class="hero">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="c1-assets/cat-big.png"
-            class="max-w-md rounded-lg " />
-          <div>
+        <div class="hero-content flex-col lg:flex-row ">
+          <div class="lg:absolute lg:top-0 lg:left-0">
             <h1 class="text-5xl font-regular">Pamper Your Pet, <br>
-               Because They Deserve <br>
-                the Bes</h1>
-           <div class=" font-sora">
-            <p class="text-base text-gray-500 py-6">
-              Discover a world of treats, toys, and essentials handpicked for <br>
-               your furry friends. Shop now and make tails wag with joy!
-            </p>
-            <button class="btn bg-firstbaton">Find a Pet</button>
-           </div>
+              Because They Deserve <br>
+              the Bes</h1>
+            <div class=" font-sora">
+              <p class="text-base text-gray-500 py-6">
+                Discover a world of treats, toys, and essentials handpicked for <br>
+                your furry friends. Shop now and make tails wag with joy!
+              </p>
+              <button class="btn bg-firstbaton">Find a Pet</button>
+            </div>
           </div>
+          <div>
+            <img src="c1-assets/cat-big.png" alt="" class="w-full rounded-lg ">
+          </div>
+
         </div>
       </div>
-     </section>
+    </section>
 
-     <!-- Card-section -->
-     <section class=" md:container mx-auto font-adlam-display mt-40">
+    <!-- Card-section -->
+    <section class=" md:container mx-auto m-4 font-adlam-display mt-40">
       <h3 class="text-5xl  mb-24">Browse By Categories</h3>
       <div class="mx-auto grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
         <!-- 1st card -->
-         <div class="">
+        <div class="">
           <div class="card bg-base-100  shadow-xl bg-yellow-500">
             <figure>
               <div class="avatar">
@@ -136,9 +128,9 @@
               <p>3 Items</p>
             </div>
           </div>
-         </div>
+        </div>
         <!-- 2nd card -->
-         <div class="">
+        <div class="">
           <div class="card bg-base-100  shadow-xl bg-yellow-500">
             <figure>
               <div class="avatar">
@@ -152,9 +144,9 @@
               <p>3 Items</p>
             </div>
           </div>
-         </div>
+        </div>
         <!-- 3rd card -->
-         <div class="">
+        <div class="">
           <div class="card bg-base-100  shadow-xl bg-yellow-500">
             <figure>
               <div class="avatar">
@@ -168,9 +160,9 @@
               <p>3 Items</p>
             </div>
           </div>
-         </div>
+        </div>
         <!-- 4th card -->
-         <div class="">
+        <div class="">
           <div class="card bg-base-100  shadow-xl bg-yellow-500">
             <figure>
               <div class="avatar">
@@ -184,9 +176,9 @@
               <p>2 Items</p>
             </div>
           </div>
-         </div>
+        </div>
         <!-- 5th card -->
-         <div class="">
+        <div class="">
           <div class="card bg-base-100  shadow-xl bg-yellow-500">
             <figure>
               <div class="avatar">
@@ -200,9 +192,9 @@
               <p>3 Items</p>
             </div>
           </div>
-         </div>
+        </div>
         <!-- 6th card -->
-         <div class="">
+        <div class="">
           <div class="card bg-base-100  shadow-xl bg-yellow-500">
             <figure>
               <div class="avatar">
@@ -216,64 +208,334 @@
               <p>3 Items</p>
             </div>
           </div>
-         </div>
+        </div>
       </div>
-     </section>
+    </section>
 
-     <!-- Trending Pet Products -->
-      <section class="font-adlam-display mt-40 bg-pink-100">
-        <div class="md:container mx-auto mt-24">
-          <h3 class="text-5xl  mb-24">Trending Pet Products</h3>
-          <!-- Cards -->
-           <div>
-            <div class="card bg-yellow-500  shadow-xl ">
-              <div class="card-body space-y-8">
-                <h2 class="card-title text-4xl">T - Shirt For Dogs</h2>
-               <div class="font-sora space-y-8">
-                <p>Discover a world of trets, toys and <br>
-                   essentials handpicked for</p>
-                <button class=" bg-white px-2 py-3 rounded-xl">Shop Now</button>
-               </div>
-              </div>
-              <figure>
-                <img
-                  src="c1-assets/cute-pet-small.png"
-                  alt="Shoes" />
-              </figure>
-            </div>
-            <!-- Rating cards -->
-            <div>
-
-              <!-- 1st card -->
-               <div>
-               <div class="flex">
-                <div class=" bg-white w-96 shadow-xl">
-                  <figure>
-                    <div class="avatar">
-                      <div class="w-24 rounded">
-                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                      checked="checked" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    <h2 class="text-base">4.5</h2>
+    <!-- Trending Pet Products -->
+    <section class="font-adlam-display bg-pink-100 my-20 ">
+      <div class="md:container mx-auto py-14">
+        <h3 class="text-5xl">Trending Pet Products</h3>
+        <!-- Cards -->
+        <div class="flex flex-col md:flex-row gap-10 my-10">
+          <div class=" bg-yellow-500 flex flex-col items-center justify-center relative  pl-8 pt-8 rounded-xl ">
+            <div class="h-full w-full flex ">
+              <div>
+                <div class="w-full">
+  
+                </div>
+                <div class=" absolute top-8">
+                  <h2 class="card-title text-lg md:text-4xl mb-2 md:mb-5">T - Shirt For Dogs</h2>
+                  <div class="font-sora">
+                    <p class="text-sm md:text-base">Discover a world of trets, toys and <br>
+                      essentials handpicked for</p>
+                    <button class=" bg-white px-2 py-3 mt-4 rounded-xl">Shop Now</button>
                   </div>
                 </div>
-               </div>
-               </div>
+                
+              </div>
+              <div class="flex items-stretch w-full justify-end md:ml-52">
+                <img src="c1-assets/cute-pet-small.png" alt="" class="" />
+              </div>
             </div>
-           </div>
+           
+          </div>
+          <!-- Rating cards -->
+         <div>
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 m-2">
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st card -->
+            <div class="flex bg-white lg:w-80 p-5 shadow-xl gap-3 rounded-xl">
+              <figure class="bg-[#FFF9F4] flex justify-center items-center px-3 rounded-2xl">
+                <div class="avatar w-full">
+                  <div class="rounded bg-white">
+                    <img src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>=
+              </figure>
+              <div class="flex flex-col gap-2">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <!-- <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> -->
+                  <h2 class="text-base ml-3">4.5</h2>
+                </div>
+                <div>
+                  <p>Pet Bed</p>
+                  <p class="font-bold">$39.99</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+         </div>
         </div>
-      </section>
-   </main>
+      </div>
+    </section>
+
+    
+    <!-- Price section -->
+    <section class="font-adlam-display md:container mx-auto mb-24 m-3 ">
+      <h3 class="text-5xl mb-20">Everyday low Price</h3>
+      <!-- Hero -->
+      <div class="grid lg:grid-cols-12 gap-5 ">
+        <!-- 1st hero -->
+        <div class="hero bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:col-span-7 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="c1-assets/cute-dog-mid.png" class="" />
+            <div>
+              <p class="font-sora">Under Price</p>
+              <h1 class="text-4xl">Pet Grooming Mitt</h1>
+              <p class="py-6 text-white">
+                (Easy Hair Removal)
+              </p>
+              <h3 class="text-6xl">$7.99</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd hero -->
+        <div class="hero bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] lg:col-span-5 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="c1-assets/cute-pet-small.png" class="" />
+            <div>
+              <h1 class="text-4xl">T-Shirt for Dogs</h1>
+              <p class="py-6 text-6xl text-yellow-500">
+                $7.99
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class=" bg-yellow-200  p-10">
+    <section class="md:container mx-auto footer ">
+      <div>
+        <div class="flex justify-center items-center gap-3">
+          <img src="c1-assets/logo-footer.png" alt="">
+          <h2 class="text-xl">Brows <span class="text-yellow-400">4</span> pets</h2>
+        </div>
+        <p class="w-1/2">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      </div>
+
+      <nav>
+        <a class="link link-hover">Fina a pet</a>
+        <a class="link link-hover">Breeds</a>
+        <a class="link link-hover">Contact us</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Follows us</h6>
+        <div class="grid grid-flow-col gap-4">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </nav>
+    </section>
+  </footer>
 </body>
+
 </html>
